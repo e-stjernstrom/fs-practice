@@ -19,7 +19,7 @@ const App = (props) => {
   }, [])
     
 
-  const NoteToShow = showAll
+  const notesToShow = showAll
     ? notes
     : notes.filter(note => note.important === true)
 
@@ -73,7 +73,7 @@ const App = (props) => {
       </button>
       <ul>
         {
-          NoteToShow.map(note =>
+          notesToShow.map(note =>
             <Note
               key={note.id}
               note={note}
