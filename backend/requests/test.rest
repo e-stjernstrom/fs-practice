@@ -6,6 +6,6 @@ content-type: application/json
 
 {
     "name": "sample",
-    "content": "a lovely day!",
+    "content": "lol",
     "time": "Wed, 21 Oct 2015 18:27:50 GMT"
 }
