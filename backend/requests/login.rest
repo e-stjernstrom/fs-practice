@@ -1,0 +1,28 @@
+POST http://localhost:3001/api/login/ HTTP/1.1
+content-type: application/json
+
+{
+    "username": "root",
+    "name": "Superuser",
+    "password": "salainen"
+}
+
+###
+POST http://localhost:3001/api/notes/ HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjZhNWI4ZTNiZmFhYjE3ODEwYTM1ODc4MSIsImlhdCI6MTc4NDQyMzQxOX0.mz2VkyYUepFwQHS_tbZBkjPCTdenLw5zIBjEnCR1Z6Y
+
+{
+    "content": "Hello, Token Authorization!",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+###
+GET http://localhost:3001/api/notes/
+
+###
+DELETE http://localhost:3001/api/notes/6a5c24ba47c0850d9bfe7ec6 HTTP/1.1
+
+DELETE http://localhost:3001/api/notes/6a5c24b847c0850d9bfe7ec5 HTTP/1.1
+
+DELETE http://localhost:3001/api/notes/6a5c24b647c0850d9bfe7ec4 HTTP/1.1

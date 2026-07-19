@@ -1,0 +1,28 @@
+POST http://localhost:3001/api/users/ HTTP/1.1
+content-type: application/json
+
+{
+    "username": "root",
+    "name": "Superuser",
+    "password": "salainen"
+}
+
+###
+GET http://localhost:3001/api/users/ HTTP/1.1
+
+###
+POST http://localhost:3001/api/notes/ HTTP/1.1
+content-type: application/json
+
+{
+    "content": "Hello! User!",
+    "important": true,
+    "userId": "6a5b8e3bfaab17810a358781"
+}
+
+###
+GET http://localhost:3001/api/notes/ HTTP/1.1
+
+
+###
+GET http://localhost:3001/api/users/ HTTP/1.1
